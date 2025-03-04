@@ -1,0 +1,26 @@
+* {
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img{
+    width:400px;
+}
+
+.t_wrap {
+    width: 400px;
+}
+.content {
+    color: black;
+}
+
+.channel {
+    color: gray;
+}
