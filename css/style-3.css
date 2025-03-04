@@ -1,0 +1,21 @@
+*{
+    margin: 2px;
+}
+
+nav{
+    background-color: gainsboro;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.enter_list li a {
+    text-decoration: none;
+    color:black;
+}

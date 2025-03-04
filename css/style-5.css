@@ -1,0 +1,15 @@
+*{
+    margin: 10px;
+}
+
+.t_wrap{
+    width: 600px;
+}
+
+.txt {
+    color: gray;
+}
+
+.time {
+    color: lightgray;
+}

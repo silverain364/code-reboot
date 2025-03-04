@@ -1,0 +1,38 @@
+*{
+    margin: 2px;
+}
+a {
+    text-decoration: none;
+    color:#3b3b3b;
+}
+#stock {
+    width:600px;
+    background-color: #eee;
+    padding: 10px;
+}
+#stock ul li {
+    border: 1px solid #acacac;
+    margin: 3px;
+    padding: 5px;
+}
+ul {
+    list-style-type: none;
+}
+#stock ul li h3 {
+    font-weight: normal;
+}
+.stock_num{
+    font-weight: bold;
+}
+.percent {
+    font-size: 12px;
+    padding: 5px;
+}
+.blue {
+    color: rgb(72, 150, 180);
+    background-color: #cdedff;
+}
+.red {
+    color: rgb(129, 62, 62);
+    background-color: rgb(255, 188, 188);
+}
