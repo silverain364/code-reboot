@@ -1,0 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.cdnfonts.com/css/malgun-gothic-boot');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #474747;
+}
+
+.list1, .list2 , .list3{
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    gap: 8px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.list1 .btn {
+    font-size: 15px;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    display: block;
+    padding: 0 17px;
+    border: 1px solid #e2e2e2;
+    border-radius: 40px;
+}
+
+.list1 .btn.blue {
+    color: #5B92FE;
+    background: rgba(91, 145, 254, 0.16) url(../img/c0-1-arrow.png) no-repeat right 17px center/18px;
+    border: 1px solid rgba(91, 145, 254, 0.08);
+    padding-right: 44px;
+}
+
+.list2 ul{
+    display: block;
+}
+
+.list2 .btn {
+    padding: 10px 12px;
+    border-radius: 22px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 24px 30px;
+    font-family: 'Malgun Gothic Boot', sans-serif;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+ul.list3 {
+    display: inline-flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+ul.list3 li {
+    width: 80px;
+}
+
+ul.list3 li a {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul.list3 li a img {
+    display: inline-block;
+    /* width: 37px; */
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+ul.list3 li a span {
+    display: block;
+    width: 55px;
+    background-color: #eee;
+    font-size: 12.49px;
+    line-height: 28px;
+    border-radius: 40px;
+
+}
+
+.container2{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: inline-block;
+    font-family: 'Malgun Gothic Boot', sans-serif;
+    padding: 30px 26px;
+}
+
+.container2 h2 {
+    font-size: 18px;
+}
+
+.container2 .list4{
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container2 .list4 li{
+    display: flex;
+    flex-direction: column;
+    width: 308px;
+    gap:12px
+}
+
+.container2 .list4 li .btn {
+    display: flex;
+    background-color: #F5F5F4;
+    border-radius: 6px;
+}
+
+.container2 .list4 li .btn img {
+    border-radius: 6px;
+}
+
+.container2 .list4 li .btn span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.container2 .list4 li .btn span h3{
+    color: #444444;
+    line-height: 26px;
+}
+
+.container2 .list4 li .btn span p{
+    color: #888888;
+    line-height: 19px;
+}
+

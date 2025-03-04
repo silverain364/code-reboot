@@ -1,0 +1,137 @@
+@import url(https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css);
+
+body {
+    font-family: 'NanumBarunGothic';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 300px 0;
+}
+
+section::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: #f5f5f5;
+    top:calc(50% - 125px);
+    z-index: -1;
+}
+
+.rel {
+    width: 1140px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.content {
+    position: relative;
+}
+
+.content .arrow {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    font-size: 0px;
+}
+
+.content .arrow.left {
+    background: url(../img/arrow-l.png) no-repeat center/contain;
+    left: -60px;
+}
+
+.content .arrow.right {
+    background: url(../img/arrow-r.png) no-repeat center/contain;
+    right: -60px;
+}
+
+
+.content_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.content_list li {
+    width: calc(50% - 12px);
+}
+
+.content_list li a {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.content_list .img_wrap {
+    width: 309px;
+    height: 207px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content_list li:nth-child(1) .img_wrap {
+    background-image: url(../img/c1-1.png);
+}
+.content_list li:nth-child(2) .img_wrap {
+    background-image: url(../img/c1-3.png);
+}
+.content_list li:nth-child(3) .img_wrap {
+    background-image: url(../img/c1-4.png);
+}
+.content_list li:nth-child(4) .img_wrap {
+    background-image: url(../img/c1-2.png);
+}
+
+.content_list .txt_wrap {
+    padding: 0 20px;
+    width: calc(100% - 309px);
+}
+
+.content_list p.txt1 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #9453FB;
+    line-height: 20px;
+    letter-spacing: -.5px;
+}
+
+.content_list .txt_wrap h2{
+    color: #333333;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: -.5px;
+    font-weight: 400;
+    margin: 6px 0 8px;
+}
+
+.content_list .txt_wrap .link {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    color: #828282;
+}

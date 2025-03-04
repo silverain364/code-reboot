@@ -1,0 +1,75 @@
+@media screen and (max-width:1800px){
+    html {
+        font-size: 62.5%;
+    }
+
+    .content_list li:nth-child(3) a .deco {
+        width: 12rem;
+    }
+
+    .rel {
+        padding: 10rem 4rem;
+    }
+
+    .content_list li {
+        height: 47rem;
+    }
+
+    .content_list .img_wrap {
+        height: 30rem;
+        width: 25rem;
+    }
+
+    section h1::after {
+        width: 7rem;
+        height: 7rem;
+        top: -4rem;
+        right: -7rem;
+    }
+
+    section h1 {
+        font-size: 7.2rem;
+    }
+}
+@media screen and (max-width:1440px) {
+    section h1::after, 
+    .content_list li a .deco {
+        display: none;
+    }
+
+    .content_list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .content_list li a {
+        min-width: 38rem;
+    }
+
+    .content_list li {
+        /* 일정한 너비값을 지님 */
+        flex:initial;
+    }
+
+    section h1 {
+        font-size: 4.5rem;
+        line-height: 4.8rem;
+    }
+
+}
+
+@media screen and (max-width:499px) {
+    .content_list .img_wrap {
+        height: 24rem;
+    }
+
+    .content_list li {
+        height: 42rem;
+       
+    }
+
+    section h1 {
+        text-align: left;
+    }
+}

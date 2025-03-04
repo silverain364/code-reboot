@@ -1,0 +1,165 @@
+@import url(https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NanumBarunGothic';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+section::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(140, 230, 137);
+    top:calc(50% - 200px);
+    z-index: -1;
+}
+
+.rel {
+    width: 1140px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.content {
+    position: relative;
+}
+
+.content .arrow {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    font-size: 0px;
+}
+
+.content .arrow.left {
+    background: url(../img/arrow-l.png) no-repeat center/contain;
+    left: -60px;
+}
+
+.content .arrow.right {
+    background: url(../img/arrow-r.png) no-repeat center/contain;
+    right: -60px;
+}
+
+.content_list {
+    display: flex;
+    gap: 10px;
+}
+
+.content_list li a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content_list .img_wrap {
+    height: 264px;
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.content_list .img_wrap .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all .3s ease-in-out;
+}
+
+.content_list li:hover .img_wrap .bg {
+    transform: scale(1.05);
+}
+
+.content_list li:nth-child(1) .img_wrap .bg{
+    background-image: url(../img/c2-1.png);
+}
+.content_list li:nth-child(2) .img_wrap .bg{
+    background-image: url(../img/c2-2.png);
+}
+.content_list li:nth-child(3) .img_wrap .bg{
+    background-image: url(../img/c2-3.png);
+}
+.content_list li:nth-child(4) .img_wrap .bg{
+    background-image: url(../img/c2-4.png);
+}
+
+.content_list .img_wrap p.txt::before {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.content_list li:hover .img_wrap p.txt::before{
+    width: 20px;
+}
+
+.content_list .img_wrap:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content_list .img_wrap p.txt {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0.3;
+}
+
+.content_list li:hover .img_wrap p.txt{
+    opacity: 1;
+}
+
+.content_list h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: #414141;
+}
+
