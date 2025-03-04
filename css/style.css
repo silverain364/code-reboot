@@ -1,0 +1,177 @@
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Apple SD Gothic Neo", "Helvetica Neue", Arial, sans-serif;
+    /* line-height: 1; */
+}
+
+body {
+    background-color: #eee;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container {
+    max-width: 876px;
+    margin: auto;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #eee;
+}
+
+.dep1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dep1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.dep1 span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.dep1-list {
+    display: flex;
+    gap: 8px;
+}
+
+.dep1-list li a {
+    color: rgb(112, 112, 112);
+}
+
+.depth {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px #c2c2c2;
+}
+
+.dep2 {
+    padding: 19px 30px;
+}
+
+.dep2-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px
+}
+
+.dep2-list li a {
+    color: #3d3d3d;
+    font-weight: 800;
+}
+
+.dep2-list li{
+    position: relative;
+}
+
+.dep2-list .t-ico a::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(255, 56, 56);
+    top: -3px;
+    right: -3px;
+}
+
+.dep2-list .t-ico:nth-child(1) a{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dep2-list a::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1.5px;
+    background-color: #000000;
+    bottom:-20px;
+    left:calc(50% - 30px);
+
+    transform: scaleX(0%);
+    transition: transform .1s ease-in;
+
+}
+.dep2-list a:hover::before{
+    transform: scaleX(100%);
+}
+
+.dep3 {
+    padding: 30px;
+}
+
+.location-wrap span {
+    font-size: 18px;
+}
+
+.location-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:27px
+}
+
+.location-weather .degree {
+    font-size: 47.4px;
+    font-weight: 800;
+}
+
+.location-weather .status-wrap {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.location-weather .weather-list {
+    display: flex;
+    gap: 5px;
+}
+
+.location-weather .weather-list li{
+    width: 70px;
+    height: 64px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.location-weather .weather-list li .txt3 {
+    font-size: 17.3px;
+    font-weight: 800;
+}
+
+.location-weather .weather-list li .txt3 span{
+    font-size: 12.8px;
+}
