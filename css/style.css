@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,747;1,747&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+
+#wrap{
+    border: 3px solid gray;
+    padding: 10px;
+    width: 700px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+header h1{
+    text-transform: uppercase;
+    font-family: "Nunito", serif;
+    letter-spacing: 5px;
+}
+
+header nav{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+header nav a{
+    background-color: rgb(167, 160, 255);
+    padding: 3px;
+}
+
+header .find{
+    background-color: rgb(228, 226, 255);
+}
+
+.hero {
+    background-color: lightgray;
+    padding: 100px;
+}
+
+.article{
+    border: 3px solid darkblue;
+    padding: 10px;
+}
+
+.article .article_wrap {
+    background-color: lemonchiffon;
+}
+
+.article .article_wrap .content_wrap{
+    text-align: right;
+}
+
+.article .article_wrap .img_wrap img{
+    width:300px;
+}
+
+.article .article_wrap ul {
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+}
+
+.article .article_wrap ul li {
+    list-style-type: none;
+    margin: 5px;
+    background-color: rgb(123, 125, 233);
+}
+.article .article_wrap ul li:nth-child(3) {
+    background-color: violet;
+}
